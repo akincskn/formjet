@@ -59,18 +59,3 @@
     @apply bg-background text-foreground font-sans;
   }
 }
-
-@keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.animate-gradient-text {
-  background: linear-gradient(270deg, #3b82f6, #8b5cf6, #6366f1, #3b82f6);
-  background-size: 300% 300%;
-  animation: gradient-shift 6s ease infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
