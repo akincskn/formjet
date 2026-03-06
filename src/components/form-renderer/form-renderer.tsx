@@ -114,7 +114,7 @@ export function FormRenderer({
           <p className="text-gray-500">{settings.successMessage}</p>
           {settings.showBranding && (
             <a
-              href="https://formjet.app"
+              href={process.env.NEXT_PUBLIC_APP_URL ?? "https://formjet.vercel.app"}
               className="mt-8 inline-block text-xs text-gray-300 hover:text-gray-500"
               target="_blank"
               rel="noopener noreferrer"
@@ -166,7 +166,7 @@ export function FormRenderer({
         {settings.showBranding && (
           <p className="mt-4 text-center">
             <a
-              href="https://formjet.app"
+              href={process.env.NEXT_PUBLIC_APP_URL ?? "https://formjet.vercel.app"}
               className="text-xs text-gray-300 hover:text-gray-500"
               target="_blank"
               rel="noopener noreferrer"

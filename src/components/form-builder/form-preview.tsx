@@ -54,7 +54,7 @@ export function FormPreview({ fields, settings, formName }: FormPreviewProps) {
       {settings.showBranding && (
         <div className="border-t px-6 py-2 text-center">
           <a
-            href="https://formjet.app"
+            href={process.env.NEXT_PUBLIC_APP_URL ?? "https://formjet.vercel.app"}
             className="text-xs text-gray-400 hover:text-gray-600"
             target="_blank"
             rel="noopener noreferrer"
